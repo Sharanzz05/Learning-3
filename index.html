@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday!</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <audio autoplay loop>
+    <source src="your-song.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Background Decorations -->
+  <div class="background">
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="flower"></div>
+    <div class="flower"></div>
+  </div>
+
+  <div class="slider">
+    <!-- Slide 1: Intro -->
+    <div class="slide active">
+      <h1>Happy Birthday, [Her Name]!</h1>
+      <p>Today is all about celebrating YOU, my amazing best friend!</p>
+      <button class="next-btn" onclick="nextSlide()">Next &rarr;</button>
+    </div>
+
+    <!-- Slide 2: Message -->
+    <div class="slide">
+      <h2>You Are So Special!</h2>
+      <p>[Write your heartfelt message here, expressing how much she means to you.]</p>
+      <button class="next-btn" onclick="nextSlide()">Next &rarr;</button>
+    </div>
+
+    <!-- Slide 3: Final -->
+    <div class="slide">
+      <h2>Thank You for Being You!</h2>
+      <p>You make every day brighter, and I’m so lucky to have you in my life!</p>
+      <button class="surprise-btn" onclick="showSurprise()">Click for a Surprise!</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
